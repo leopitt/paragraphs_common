@@ -1,5 +1,59 @@
 name: 'Common Paragraphs'
 type: module
 description: 'Configuration common paragraphs.'
+recipes:
+  - core/recipes/page_content_type
 install:
   - paragraphs
+config:
+  actions:
+    # Add the field storage for the page paragraphs field.
+    field.storage.node.field_page_paragraphs:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          module:
+            - entity_reference_revisions
+            - node
+            - paragraphs
+        id: node.field_page_paragraphs
+        field_name: field_page_paragraphs
+        entity_type: node
+        type: entity_reference_revisions
+        settings:
+          target_type: paragraph
+        module: entity_reference_revisions
+        locked: false
+        cardinality: -1
+        translatable: true
+        indexes: { }
+        persist_with_no_fields: false
+        custom_storage: false
+    # Add the page paragraphs field.
+    field.field.node.page.field_page_paragraphs:
+      createIfNotExists:
+        langcode: en
+        status: true
+        dependencies:
+          config:
+            - field.storage.node.field_page_paragraphs
+            - node.type.page
+          module:
+            - entity_reference_revisions
+        id: node.page.field_page_paragraphs
+        field_name: field_page_paragraphs
+        entity_type: node
+        bundle: page
+        label: Content
+        description: ''
+        required: false
+        translatable: false
+        default_value: { }
+        default_value_callback: ''
+        settings:
+          handler: 'default:paragraph'
+          handler_settings:
+            target_bundles: null
+            negate: 0
+        field_type: entity_reference_revisions
