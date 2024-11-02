@@ -59,22 +59,18 @@ config:
             negate: 0
         field_type: entity_reference_revisions
     # Update the page content type form display.
-    core.entity_form_display.node.page.default.yml:
+    core.entity_form_display.node.page.default:
       setComponent:
-        field_page_paragraphs:
-          type: paragraphs
-          weight: 121
+        name: field_page_paragraphs
+        options:
+          type: entity_reference_paragraphs
+          weight: 1
           region: content
           settings:
             title: Paragraph
             title_plural: Paragraphs
             edit_mode: open
-            closed_mode: summary
-            autocollapse: none
-            closed_mode_threshold: 0
             add_mode: dropdown
             form_display_mode: default
             default_paragraph_type: ''
-            features:
-              collapse_edit_all: collapse_edit_all
-              duplicate: duplicate
+          third_party_settings: { }
