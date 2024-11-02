@@ -4,6 +4,7 @@ description: 'Configuration common paragraphs.'
 recipes:
   - core/recipes/page_content_type
 install:
+  - link
   - paragraphs
 config:
   actions:
@@ -57,3 +58,23 @@ config:
             target_bundles: null
             negate: 0
         field_type: entity_reference_revisions
+    # Update the page content type form display.
+    core.entity_form_display.node.page.default.yml:
+      setComponent:
+        field_page_paragraphs:
+          type: paragraphs
+          weight: 121
+          region: content
+          settings:
+            title: Paragraph
+            title_plural: Paragraphs
+            edit_mode: open
+            closed_mode: summary
+            autocollapse: none
+            closed_mode_threshold: 0
+            add_mode: dropdown
+            form_display_mode: default
+            default_paragraph_type: ''
+            features:
+              collapse_edit_all: collapse_edit_all
+              duplicate: duplicate
