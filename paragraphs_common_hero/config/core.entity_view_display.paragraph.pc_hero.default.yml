@@ -1,0 +1,79 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pc_hero.field_pc_hero_body
+    - field.field.paragraph.pc_hero.field_pc_hero_preface
+    - field.field.paragraph.pc_hero.field_pc_hero_preface_cta
+    - field.field.paragraph.pc_hero.field_pc_hero_primary_cta
+    - field.field.paragraph.pc_hero.field_pc_hero_secondary_cta
+    - field.field.paragraph.pc_hero.field_pc_hero_title
+    - paragraphs.paragraphs_type.pc_hero
+  module:
+    - link
+    - text
+id: paragraph.pc_hero.default
+targetEntityType: paragraph
+bundle: pc_hero
+mode: default
+content:
+  field_pc_hero_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_pc_hero_preface:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pc_hero_preface_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pc_hero_primary_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pc_hero_secondary_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_pc_hero_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
