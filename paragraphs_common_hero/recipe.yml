@@ -1,0 +1,5 @@
+name: 'Common Paragraphs - Hero'
+type: module
+description: 'Configuration for a Hero paragraph.'
+install:
+  - paragraphs

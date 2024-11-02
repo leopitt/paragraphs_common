@@ -1,0 +1,17 @@
+{
+    "name": "leopitt/paragraphs_common",
+    "description": "Common Drupal paragraphs.",
+    "keywords": ["recipe", "Drupal", "Paragraphs"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Leo Pitt",
+            "homepage": "https://github.com/leopitt",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/paragraphs": "^1"
+    }
+}

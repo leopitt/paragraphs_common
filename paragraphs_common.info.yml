@@ -1,0 +1,6 @@
+name: 'Common Paragraphs'
+description: Common Drupal paragraphs.
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - paragraphs:paragraphs

@@ -1,0 +1,5 @@
+name: 'Common Paragraphs'
+type: module
+description: 'Configuration common paragraphs.'
+install:
+  - paragraphs
