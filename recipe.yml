@@ -8,10 +8,10 @@ install:
   - paragraphs
 config:
   actions:
-    # Update the page content type form display.
+    # Add the paragraphs field to the the page content type form display.
     core.entity_form_display.node.page.default:
       setComponent:
-        name: field_page_paragraphs
+        name: field_page_pc_paragraphs
         options:
           type: entity_reference_paragraphs
           weight: 1
@@ -24,3 +24,17 @@ config:
             form_display_mode: default
             default_paragraph_type: ''
           third_party_settings: { }
+    # Update the page content type view display.
+    core.entity_view_display.node.page.default:
+      # Add the paragraphs field.
+      setComponent:
+        name: field_page_pc_paragraphs
+        options:
+          type: entity_reference_revisions_entity_view
+          label: hidden
+          settings:
+            view_mode: default
+            link: ''
+          third_party_settings: { }
+          weight: 2
+          region: content

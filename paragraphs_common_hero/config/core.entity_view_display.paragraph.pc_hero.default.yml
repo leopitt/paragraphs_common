@@ -19,14 +19,14 @@ mode: default
 content:
   field_pc_hero_body:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 3
     region: content
   field_pc_hero_preface:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -34,7 +34,7 @@ content:
     region: content
   field_pc_hero_preface_cta:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -46,7 +46,7 @@ content:
     region: content
   field_pc_hero_primary_cta:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -58,7 +58,7 @@ content:
     region: content
   field_pc_hero_secondary_cta:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -70,7 +70,7 @@ content:
     region: content
   field_pc_hero_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
