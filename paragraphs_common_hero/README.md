@@ -1,4 +1,4 @@
-## Common Paragaphs - Hero
+## Common Paragraphs - Hero
 
 A Hero paragraph type.
 

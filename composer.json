@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+        "drupal/nomarkup": "^1.0",
         "drupal/paragraphs": "^1"
     }
 }
