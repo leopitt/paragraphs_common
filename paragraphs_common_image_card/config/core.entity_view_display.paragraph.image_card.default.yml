@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_card.field_fru_ic_cta_campaign_id
+    - field.field.paragraph.image_card.field_fru_image_card_body
+    - field.field.paragraph.image_card.field_fru_image_card_cta
+    - field.field.paragraph.image_card.field_fru_image_card_media
+    - field.field.paragraph.image_card.field_fru_image_card_title
+    - paragraphs.paragraphs_type.image_card
+  module:
+    - link
+    - nomarkup
+id: paragraph.image_card.default
+targetEntityType: paragraph
+bundle: image_card
+mode: default
+content:
+  field_fru_ic_cta_campaign_id:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
+    region: content
+  field_fru_image_card_body:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_fru_image_card_cta:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_fru_image_card_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: image_card_image
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 2
+    region: content
+  field_fru_image_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fru_ic_title
+    - paragraphs.paragraphs_type.image_cards
+id: paragraph.image_cards.field_fru_ic_title
+field_name: field_fru_ic_title
+entity_type: paragraph
+bundle: image_cards
+label: Title
+description: 'The title for the section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

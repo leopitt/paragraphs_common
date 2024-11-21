@@ -1,0 +1,5 @@
+name: 'Common Paragraphs - Image Cards'
+type: module
+description: 'Configuration for an Image Cards paragraph.'
+recipes:
+  - recipes/contrib/paragraphs_common

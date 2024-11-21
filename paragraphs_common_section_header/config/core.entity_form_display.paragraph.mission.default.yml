@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mission.field_sm_body
+    - field.field.paragraph.mission.field_sm_title
+    - paragraphs.paragraphs_type.mission
+  module:
+    - length_indicator
+    - text
+id: paragraph.mission.default
+targetEntityType: paragraph
+bundle: mission
+mode: default
+content:
+  field_sm_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_sm_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 10
+          optimax: 40
+          tolerance: 5
+hidden:
+  created: true
+  status: true

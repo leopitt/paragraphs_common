@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_card.field_fru_ic_cta_campaign_id
+    - field.field.paragraph.image_card.field_fru_image_card_body
+    - field.field.paragraph.image_card.field_fru_image_card_cta
+    - field.field.paragraph.image_card.field_fru_image_card_media
+    - field.field.paragraph.image_card.field_fru_image_card_title
+    - paragraphs.paragraphs_type.image_card
+  module:
+    - length_indicator
+    - link
+    - media_library
+id: paragraph.image_card.default
+targetEntityType: paragraph
+bundle: image_card
+mode: default
+content:
+  field_fru_ic_cta_campaign_id:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fru_image_card_body:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fru_image_card_cta:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_fru_image_card_media:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_fru_image_card_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 10
+          optimax: 40
+          tolerance: 5
+hidden:
+  created: true
+  status: true

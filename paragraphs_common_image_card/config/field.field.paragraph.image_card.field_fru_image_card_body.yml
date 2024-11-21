@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fru_image_card_body
+    - paragraphs.paragraphs_type.image_card
+id: paragraph.image_card.field_fru_image_card_body
+field_name: field_fru_image_card_body
+entity_type: paragraph
+bundle: image_card
+label: Body
+description: 'The text that is revealed on mouse hover.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fru_ic_cta_campaign_id
+    - paragraphs.paragraphs_type.image_card
+id: paragraph.image_card.field_fru_ic_cta_campaign_id
+field_name: field_fru_ic_cta_campaign_id
+entity_type: paragraph
+bundle: image_card
+label: 'Fundraise Up Campaign ID'
+description: "A Fundraise Up Campaign ID, E.g. <em>FUNPRWRBBCD</em>. You can get one from your Fundraise Up Campaigns page.\r\nIf provided, the CTA will open a checkout modal for the campaign instead of going to the CTA URL."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

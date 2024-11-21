@@ -1,0 +1,5 @@
+name: 'Common Paragraphs - Header section'
+type: module
+description: 'Configuration for a Header section paragraph.'
+recipes:
+  - recipes/contrib/paragraphs_common

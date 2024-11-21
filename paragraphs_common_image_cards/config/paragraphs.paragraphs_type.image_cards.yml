@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_cards
+label: 'Image Cards'
+icon_uuid: null
+icon_default: null
+description: 'A set of three Image Card elements.'
+behavior_plugins: {  }

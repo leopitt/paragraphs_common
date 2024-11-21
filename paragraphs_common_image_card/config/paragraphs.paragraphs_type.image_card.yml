@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_card
+label: 'Image Card'
+icon_uuid: null
+icon_default: null
+description: 'An Image Card with a CTA.'
+behavior_plugins: {  }

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fru_ic_image_cards
+    - paragraphs.paragraphs_type.image_cards
+    - paragraphs.paragraphs_type.image_card
+  module:
+    - entity_reference_revisions
+id: paragraph.image_cards.field_fru_ic_image_cards
+field_name: field_fru_ic_image_cards
+entity_type: paragraph
+bundle: image_cards
+label: 'Image Cards'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_card: image_card
+    negate: 0
+    target_bundles_drag_drop:
+      hero_standard:
+        weight: 6
+        enabled: false
+      image_card:
+        weight: 7
+        enabled: true
+      image_cards:
+        weight: 5
+        enabled: false
+      mission:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

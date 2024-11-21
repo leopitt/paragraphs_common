@@ -1,0 +1,6 @@
+name: 'Common Paragraphs - Header section'
+description: A Header section paragraph.
+type: module
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - paragraphs_common:paragraphs_common

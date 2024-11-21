@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sm_body
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.mission
+  module:
+    - text
+id: paragraph.mission.field_sm_body
+field_name: field_sm_body
+entity_type: paragraph
+bundle: mission
+label: Body
+description: 'Body text for the Mission section. Aim for between 50 and 300 characters.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long
